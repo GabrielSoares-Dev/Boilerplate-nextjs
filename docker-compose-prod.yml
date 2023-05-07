@@ -5,5 +5,5 @@ services:
    container_name: default-project-nextjs
    image: gabrielsoaresdev/default-project-nextjs:latest
    ports:
-    - "3000:3000"
+    - "3005:3005"
    restart: always
