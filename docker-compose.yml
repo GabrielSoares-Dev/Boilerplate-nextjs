@@ -1,0 +1,16 @@
+version: "3.5"
+
+services: 
+  default-project-nextjs:
+   container_name: default-project-nextjs
+   build: 
+    context: .
+    dockerfile: Dockerfile.dev
+   restart: always
+   ports:
+    - 3000:3000
+   volumes:
+    - .:/app/default-project-nextjs
+    - /app/default-project-nextjs/node_modules
+    - /app/default-project-nextjs/.next
+ 
