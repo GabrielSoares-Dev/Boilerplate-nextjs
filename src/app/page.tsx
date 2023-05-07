@@ -1,3 +1,4 @@
+// Pagina inicial nextjs
 export default function Home() {
   return (
     <main>
