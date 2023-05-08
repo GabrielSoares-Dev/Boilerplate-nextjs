@@ -1,0 +1,9 @@
+node_modules
+.next
+.vscode
+.env
+Dockerfile
+Dockerfile-staging
+Dockerfile-production
+.vscode
+npm-debug.log
