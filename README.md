@@ -1,34 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate Next.js
 
-## Getting Started
+Este é um boilerplate para projetos Next.js, que inclui uma configuração básica para começar a desenvolver rapidamente. Ele utiliza várias tecnologias e bibliotecas populares, como React, Tailwind CSS, Jest, Cypress, MSW, Zustand e muito mais.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Configuração básica do Next.js para desenvolvimento e produção.
+- Integração com o Tailwind CSS para estilização rápida e fácil.
+- Suporte a TypeScript para um desenvolvimento mais robusto.
+- Integração com o React Query para gerenciamento de estado e comunicação com a API.
+- Integração com o React Hook Form para criação de formulários com validação.
+- Integração com o Zod para validação de esquemas.
+- Suporte ao ESLint para linting e formatação do código.
+- Suporte ao Jest para testes unitários e de integração.
+- Suporte ao Cypress para testes de ponta a ponta (end-to-end).
+- Suporte ao MSW para simulação de chamadas de API durante os testes.
+- Integração com o Zustand para gerenciamento de estado simplificado.
+- Configuração pré-definida do Husky para hooks de pré-commit.
+- Uso do Commitizen para padronização das mensagens de commit.
+- Configuração do Docker para facilitar a execução e o ambiente de desenvolvimento.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Requisitos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Antes de executar o projeto, certifique-se de ter as seguintes dependências instaladas em seu ambiente de desenvolvimento:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Node.js (versão 14 ou superior)
+- npm (gerenciador de pacotes do Node.js)
+- Docker (opcional)
 
-## Learn More
+## Executando o projeto
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone este repositório em sua máquina local:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+git clone https://github.com/seu-usuario/boilerplate-nextjs.git
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Navegue até o diretório do projeto:
 
-## Deploy on Vercel
+cd boilerplate-nextjs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Instale as dependências do projeto usando o npm:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+npm i
+
+4. Após a instalação das dependências, você pode iniciar o servidor de desenvolvimento executando o seguinte comando:
+
+npm run dev 
+
+
+5. O servidor de desenvolvimento será iniciado e estará disponível em `http://localhost:3000`. Você pode acessar essa URL em seu navegador para visualizar o projeto em execução.
+
+## Testes
+
+O projeto inclui configurações para testes unitários, testes de integração e testes de ponta a ponta. Aqui estão os detalhes sobre as ferramentas de teste utilizadas:
+
+### Jest
+
+O Jest é um framework de teste popular para JavaScript, que oferece suporte a testes unitários, testes de integração e testes de snapshot. Ele é configurado neste projeto para ajudar você a escrever e executar testes de forma fácil e eficiente.
+
+- Executar todos os testes:
+  npm test
+
+- Executar os testes em modo de observação (watch mode):
+  npm run test:watch
+
+- Executar os testes silenciosamente (sem saída detalhada):
+
+npm run test:silent
+
+- Gerar relatório de cobertura de testes:
+
+npm run test:coverage
+
+### Cypress
+
+O Cypress é uma ferramenta de teste de ponta a ponta (end-to-end) que permite simular a interação do usuário com o aplicativo e realizar verificações automatizadas. Ele é configurado neste projeto para que você possa escrever e executar testes de ponta a ponta de forma fácil e eficiente.
+
+- Executar os testes do Cypress no navegador:
+
+npm run cypress:run
+
+
+
+By Gabriel Soares Maciel
