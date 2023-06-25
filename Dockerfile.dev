@@ -1,7 +1,7 @@
 FROM node:16.14-alpine3.14 AS base
 
 
-WORKDIR /app/default-project-nextjs
+WORKDIR /app/boilerplate-nextjs
 COPY package*.json .
 
 RUN npm install

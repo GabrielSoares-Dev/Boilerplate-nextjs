@@ -22,7 +22,7 @@ jobs:
           context: .
           file: Dockerfile.production
           # Qual a tag
-          tags: gabrielsoaresdev/default-project-nextjs:latest
+          # tags: colocar tag
           no-cache: true
           push: true
           github-token: ${{ secrets.GIT_ACCESS_TOKEN }}

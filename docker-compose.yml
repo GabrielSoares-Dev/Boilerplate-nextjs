@@ -1,8 +1,8 @@
 version: "3.5"
 
 services: 
-  default-project-nextjs:
-   container_name: default-project-nextjs
+  boilerplate-nextjs:
+   container_name: boilerplate-nextjs
    build: 
     context: .
     dockerfile: Dockerfile.dev
@@ -10,7 +10,7 @@ services:
    ports:
     - 3000:3000
    volumes:
-    - .:/app/default-project-nextjs
-    - /app/default-project-nextjs/node_modules
-    - /app/default-project-nextjs/.next
+    - .:/app/boilerplate-nextjs
+    - /app/boilerplate-nextjs/node_modules
+    - /app/boilerplate-nextjs/.next
  

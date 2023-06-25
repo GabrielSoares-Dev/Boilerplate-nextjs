@@ -1,9 +1,9 @@
 version: "3.5"
 
 services:
-  default-project-nextjs:
-   container_name: default-project-nextjs
-   image: gabrielsoaresdev/default-project-nextjs:latest
+  boilerplate-nextjs:
+   container_name: boilerplate-nextjs
+  #  image: colocar image
    ports:
     - "3005:3005"
    restart: always
