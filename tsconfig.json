@@ -16,7 +16,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["jest", "node", "@types/testing-library__jest-dom"],
+    "types": [
+      "jest",
+      "node",
+      "@types/testing-library__jest-dom"
+    ],
     "jsx": "preserve",
     "incremental": true,
     "plugins": [
@@ -27,7 +31,25 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@components": [
+        "./src/components"
+      ],
+      "@functions": [
+        "./src/functions"
+      ],
+      "@providers": [
+        "./src/providers"
+      ],
+      "@services": [
+        "./src/services"
+      ],
+      "@store": [
+        "./src/store"
+      ],
+      "@hooks": [
+        "./src/hooks"
+      ],
     }
   },
   "include": [
