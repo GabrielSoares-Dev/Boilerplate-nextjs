@@ -2,5 +2,10 @@
   "extends": [
     "next/core-web-vitals",
     "@rocketseat/eslint-config/react"
-  ]
+  ],
+  "rules": {
+    "react/display-name": "off",
+    "prefer-regex-literals": "off",
+    "no-useless-escape": "off"
+  }
 }
