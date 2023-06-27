@@ -6,6 +6,7 @@
   "rules": {
     "react/display-name": "off",
     "prefer-regex-literals": "off",
-    "no-useless-escape": "off"
+    "no-useless-escape": "off",
+    "no-labels":"off"
   }
 }

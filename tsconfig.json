@@ -32,6 +32,12 @@
       "@/*": [
         "./src/*"
       ],
+      "@public/*": [
+        "./public/*"
+      ],
+      "@tests/*": [
+        "./tests/*"
+      ],
       "@components": [
         "./src/components"
       ],
@@ -52,16 +58,17 @@
       ],
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "./cypress.config.ts",
-    "node_modules",
-    "cypress",
-    "**/*.cy.tsx"
-  ]
+
+"include": [
+  "next-env.d.ts",
+  "**/*.ts",
+  "**/*.tsx",
+  ".next/types/**/*.ts"
+],
+"exclude": [
+  "./cypress.config.ts",
+  "node_modules",
+  "cypress",
+  "**/*.cy.tsx"
+]
 }

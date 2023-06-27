@@ -1,5 +1,6 @@
 import React from 'react'
 import { LayoutProvider } from '@/providers'
+import 'react-toastify/dist/ReactToastify.css'
 import './globals.css'
 
 export const metadata = {
