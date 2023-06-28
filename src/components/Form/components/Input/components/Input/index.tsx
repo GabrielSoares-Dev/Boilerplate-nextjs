@@ -11,12 +11,14 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       name = '',
       hasError = false,
       errorMessage,
+      label,
       ...props
     },
     ref,
   ) => {
     return (
       <>
+        {label && label()}
         <S.Input
           $hasError={hasError}
           ref={ref}

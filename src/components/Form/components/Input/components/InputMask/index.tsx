@@ -11,15 +11,17 @@ export const InputMask = forwardRef<HTMLInputElement, InputMaskProps>(
       type = 'text',
       name = '',
       hasError = false,
-      errorMessage,
       mask = '',
       maskChar = null,
+      errorMessage,
+      label,
       ...props
     },
     ref,
   ) => {
     return (
       <>
+        {label && label()}
         <S.InputMask
           mask={mask}
           maskChar={maskChar}
