@@ -31,7 +31,6 @@ export function useLogin() {
     (data: LoginProps) => authServices.login(data),
     {
       onSuccess: (data) => {
-        console.log(data)
         setUserState(data)
         handleNavigation('/home')
       },
