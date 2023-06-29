@@ -133,7 +133,7 @@ describe('Login', () => {
     })
 
     await waitFor(() => {
-      expect(result.current.user).toStrictEqual(mockStateUser)
+      expect(result.current.data).toStrictEqual(mockStateUser)
       const atualPath = mockRouter.asPath
       expect(atualPath).toBe('/home')
     })

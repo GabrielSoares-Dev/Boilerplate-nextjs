@@ -5,7 +5,7 @@ import { createJSONStorage, persist } from 'zustand/middleware'
 export const useAuthStore = create(
   persist<AuthState>(
     (set, get) => ({
-      user: {
+      data: {
         accessToken: {
           token: '',
           type: 'bearer',
@@ -20,7 +20,7 @@ export const useAuthStore = create(
           createdAt: '',
         },
       },
-      setUserState: (user) => set(() => ({ user })),
+      setUserState: (data) => set(() => ({ data })),
     }),
     {
       name: 'auth',
