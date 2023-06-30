@@ -33,7 +33,8 @@
       "@services": ["./src/services"],
       "@store": ["./src/store" ],
       "@hooks": ["./src/hooks"],
-      "@middlewares":["./src/middlewares"]
+      "@middlewares":["./src/middlewares"],
+      "@constants":  ["./src/constants"]
     }
   },
 
