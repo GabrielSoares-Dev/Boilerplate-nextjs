@@ -6,7 +6,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
   (
     {
       children,
-      className = '',
       type = 'text',
       name = '',
       hasError = false,
@@ -18,7 +17,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
   ) => {
     return (
       <>
-        {label && label()}
+        {label && <S.ContainerLabel>{label()}</S.ContainerLabel>}
         <S.Input
           $hasError={hasError}
           ref={ref}
@@ -26,7 +25,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           name={name}
           {...props}
           autoComplete="disabled-autocomplete"
-          className={className}
         />
         {children}
         <S.ContainerErrorMessage>
