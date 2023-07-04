@@ -1,3 +1,4 @@
+import type { Permissions } from '@/@types/base-types'
 export type LoginProps = {
   email: string
   password: string
@@ -15,7 +16,7 @@ export type User = {
   phoneNumber: string
   roleName: string
   createdAt: string
-  permissions: string[]
+  permissions: Permissions[]
 }
 
 export type ContentLogin = {

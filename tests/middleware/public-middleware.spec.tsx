@@ -1,14 +1,14 @@
 import { render } from '@testing-library/react'
-import { mockUsePublicRoutes } from '@tests/helpers'
-import { PublicRoutes } from '@middlewares'
+import { mockUsePublicMiddleware } from '@tests/helpers'
+import { PublicMiddleware } from '@middlewares'
 
-describe('Public Route Middleware', () => {
+describe('Public Middleware', () => {
   it('Should be render page if user is not authenticated', async () => {
-    mockUsePublicRoutes.mockReturnValue({ isAuthenticated: false })
+    mockUsePublicMiddleware.mockReturnValue({ isAuthenticated: false })
     const { getByText } = render(
-      <PublicRoutes>
+      <PublicMiddleware>
         <div>Content</div>
-      </PublicRoutes>,
+      </PublicMiddleware>,
     )
 
     const protectedText = getByText('Content')
@@ -16,11 +16,11 @@ describe('Public Route Middleware', () => {
     expect(protectedText).toBeInTheDocument()
   })
   it('Should be not render page if user is authenticated', async () => {
-    mockUsePublicRoutes.mockReturnValue({ isAuthenticated: true })
+    mockUsePublicMiddleware.mockReturnValue({ isAuthenticated: true })
     const { queryByText } = render(
-      <PublicRoutes>
+      <PublicMiddleware>
         <div>Content</div>
-      </PublicRoutes>,
+      </PublicMiddleware>,
     )
 
     expect(queryByText('Content')).toBeNull()

@@ -1,3 +1,4 @@
+import { permissionsUrls } from '@constants'
 export type DefaultResponse = {
   statusCode: number
   message: string
@@ -15,3 +16,16 @@ export type DefaultPaginate<TItems> = {
   items: TItems[]
 }
 export type FormType = 'VIEW' | 'EDIT' | 'CREATE'
+
+export type Permissions =
+  | 'createPermission'
+  | 'deletePermission'
+  | 'updatePermission'
+  | 'viewPermission'
+  | 'createRole'
+  | 'updateRole'
+  | 'viewRole'
+  | 'deleteRole'
+  | 'syncRolesPermissions'
+
+export type Paths = keyof typeof permissionsUrls

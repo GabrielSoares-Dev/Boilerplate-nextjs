@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
 
-export type PublicRoutesProps = {
+export type ProtectedMiddlewareProps = {
   children: ReactNode
 }

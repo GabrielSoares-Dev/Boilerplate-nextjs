@@ -3,7 +3,8 @@ import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { checkUserIsAuthenticated } from '@functions'
 import { appRoutes } from '@constants'
-export function usePublicRoutes() {
+
+export function usePublicMiddleware() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const { push } = useRouter()
 

@@ -1,14 +1,14 @@
 import { render } from '@testing-library/react'
-import { mockUseProtectedRoutes } from '@tests/helpers'
-import { ProtectedRoutes } from '@middlewares'
+import { mockUseProtectedMiddleware } from '@tests/helpers'
+import { ProtectedMiddleware } from '@middlewares'
 
-describe('Protected Route Middleware', () => {
+describe('Protected Middleware', () => {
   it('Should be render page if user is authenticated', async () => {
-    mockUseProtectedRoutes.mockReturnValue({ isAuthenticated: true })
+    mockUseProtectedMiddleware.mockReturnValue({ isAuthenticated: true })
     const { getByText } = render(
-      <ProtectedRoutes>
+      <ProtectedMiddleware>
         <div>Content</div>
-      </ProtectedRoutes>,
+      </ProtectedMiddleware>,
     )
 
     const protectedText = getByText('Content')
@@ -16,11 +16,11 @@ describe('Protected Route Middleware', () => {
     expect(protectedText).toBeInTheDocument()
   })
   it('Should be not render page if user is not authenticated', async () => {
-    mockUseProtectedRoutes.mockReturnValue({ isAuthenticated: false })
+    mockUseProtectedMiddleware.mockReturnValue({ isAuthenticated: false })
     const { queryByText } = render(
-      <ProtectedRoutes>
+      <ProtectedMiddleware>
         <div>Content</div>
-      </ProtectedRoutes>,
+      </ProtectedMiddleware>,
     )
 
     expect(queryByText('Content')).toBeNull()
