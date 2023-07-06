@@ -3,7 +3,6 @@ import 'jest-canvas-mock'
 import { server } from './tests/helpers'
 
 jest.mock('next/navigation', () => require('next-router-mock'))
-
 beforeAll(() => server.listen())
 
 afterEach(() => server.resetHandlers())

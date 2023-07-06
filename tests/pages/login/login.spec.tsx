@@ -36,6 +36,7 @@ const wrapper = ({ children }: { children: ReactNode }) => (
     {children}
   </QueryClientProvider>
 )
+
 describe('Login', () => {
   it('Should be render login', async () => {
     const { getByText, getByPlaceholderText } = render(<Login />, { wrapper })
