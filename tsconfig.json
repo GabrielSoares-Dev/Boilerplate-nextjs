@@ -34,7 +34,8 @@
       "@store": ["./src/store" ],
       "@hooks": ["./src/hooks"],
       "@middlewares":["./src/middlewares"],
-      "@constants":  ["./src/constants"]
+      "@constants":  ["./src/constants"],
+      "@utils":  ["./src/utils"]
     }
   },
 
