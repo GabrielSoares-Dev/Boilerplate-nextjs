@@ -8,7 +8,6 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
       children,
       className = '',
       hasError = false,
-      name,
       label,
       errorMessage,
       ...props

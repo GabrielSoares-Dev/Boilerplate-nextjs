@@ -47,6 +47,7 @@
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
     "@faker-js/faker": "^8.0.2",
+    "@hookform/devtools": "^4.3.1",
     "@rocketseat/eslint-config": "^1.2.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
