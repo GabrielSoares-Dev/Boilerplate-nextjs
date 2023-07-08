@@ -6,7 +6,7 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app/boilerplate-nextjs
 
 COPY package*.json .
-RUN npm ci --production --omit=dev
+RUN npm ci 
 
 
 FROM base AS builder
