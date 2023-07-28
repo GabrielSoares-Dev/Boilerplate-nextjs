@@ -21,6 +21,24 @@ export const useAuthStore = create(
         },
       },
       setUserState: (data) => set(() => ({ data })),
+      clearState: () =>
+        set(() => ({
+          data: {
+            accessToken: {
+              token: '',
+              type: 'bearer',
+            },
+            user: {
+              id: 0,
+              name: '',
+              email: '',
+              roleName: '',
+              phoneNumber: '',
+              permissions: [],
+              createdAt: '',
+            },
+          },
+        })),
     }),
     {
       name: 'auth',

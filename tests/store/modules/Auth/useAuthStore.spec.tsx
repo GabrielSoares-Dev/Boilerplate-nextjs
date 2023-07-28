@@ -23,6 +23,7 @@ describe('useAuthStore', () => {
 
     expect(result.current.data).toBeDefined()
     expect(result.current.setUserState).toBeDefined()
+    expect(result.current.clearState).toBeDefined()
   })
   it('Should be set user state', () => {
     const { result } = renderHook(() => useAuthStore())
@@ -43,5 +44,14 @@ describe('useAuthStore', () => {
     const userInLocalStorage = localStorage.getItem('auth')
 
     expect(userInLocalStorage).toEqual(expect.anything())
+  })
+  it('Should be clear state', () => {
+    const { result } = renderHook(() => useAuthStore())
+
+    act(() => {
+      result.current.clearState()
+    })
+
+    expect(result.current.data.accessToken.token).toBe('')
   })
 })
