@@ -37,3 +37,17 @@ export const loginMock = (status: number) => {
     ),
   )
 }
+export const logoutMock = (status: number) => {
+  const isFailed = status !== 200
+  server.use(
+    rest.post(
+      `${process.env.NEXT_PUBLIC_SCHOOL_GUARDIAN_API}/v1/auth/logout`,
+      (req, res, ctx) => {
+        if (isFailed) {
+          return res(ctx.status(status))
+        }
+        return res(ctx.status(status))
+      },
+    ),
+  )
+}
