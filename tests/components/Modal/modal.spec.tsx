@@ -12,7 +12,7 @@ describe('Modal', () => {
     expect(modal).toBeInTheDocument()
     expect(closeButton).toBeInTheDocument()
     expect(modal).toHaveClass(
-      'max-w-xl w-full mx-auto p-6 bg-gray-700 rounded-xl',
+      'w-max mx-auto p-6 bg-gray-700 rounded-xl',
     )
   })
 })

@@ -3,8 +3,7 @@ import { motion } from 'framer-motion'
 import { RiCloseCircleLine } from 'react-icons/ri'
 
 export const ModalWrapper = tw(motion.div)`
-max-w-xl 
-w-full
+w-max
 mx-auto
 p-6
 bg-gray-700
