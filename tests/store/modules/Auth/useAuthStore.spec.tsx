@@ -41,7 +41,7 @@ describe('useAuthStore', () => {
       result.current.setUserState(mockUserState)
     })
 
-    const userInLocalStorage = sessionStorage.getItem('auth')
+    const userInLocalStorage = localStorage.getItem('auth')
 
     expect(userInLocalStorage).toEqual(expect.anything())
   })
