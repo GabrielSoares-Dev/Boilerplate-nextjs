@@ -1,4 +1,4 @@
-import { ErrorMessageProps } from '@/components/types'
+import { ErrorMessageProps } from '@components'
 import * as S from './styles'
 
 export function ErrorMessage({ children }: ErrorMessageProps) {

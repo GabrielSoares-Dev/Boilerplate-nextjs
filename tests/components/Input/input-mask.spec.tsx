@@ -1,4 +1,4 @@
-import { InputMask, ErrorMessage } from '@/components'
+import { InputMask, ErrorMessage } from '@components'
 import { render, waitFor, fireEvent } from '@testing-library/react'
 import React from 'react'
 import { act } from 'react-dom/test-utils'

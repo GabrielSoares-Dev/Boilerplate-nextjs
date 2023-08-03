@@ -1,4 +1,4 @@
-import { ButtonProps } from '@/components/types'
+import { ButtonProps } from '@components'
 import * as S from './styles'
 export function Button({
   children,

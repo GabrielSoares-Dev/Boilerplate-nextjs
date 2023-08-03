@@ -1,6 +1,6 @@
 'use client'
 import React, { forwardRef } from 'react'
-import type { InputMaskProps } from '@/components/types'
+import type { InputMaskProps } from '@components'
 import * as S from './styles'
 
 export const InputMask = forwardRef<HTMLInputElement, InputMaskProps>(

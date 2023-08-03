@@ -1,5 +1,5 @@
 import React from 'react'
-import type { ToastProps } from '@/components/types'
+import type { ToastProps } from '@components'
 import * as S from './styles'
 
 export function Toast({

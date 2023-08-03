@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { ShowToast } from '@/components'
+import { ShowToast } from '@components'
 
 export const formLoginSchema = z
   .object({

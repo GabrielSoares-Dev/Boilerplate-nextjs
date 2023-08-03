@@ -1,6 +1,6 @@
 import { toast, Slide } from 'react-toastify'
-import { Toast } from '@/components'
-import type { ShowToastProps } from '@/components/types'
+import { Toast } from '@components'
+import type { ShowToastProps } from '@components'
 
 export const ShowToast = ({
   title = '',

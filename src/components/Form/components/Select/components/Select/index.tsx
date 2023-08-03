@@ -1,4 +1,4 @@
-import type { SelectProps } from '@/components/types'
+import type { SelectProps } from '@components'
 import { forwardRef } from 'react'
 import * as S from './styles'
 

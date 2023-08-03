@@ -1,5 +1,5 @@
 'use client'
-import { ModalProps } from '@/components/types'
+import { ModalProps } from '@components'
 import { AnimatePresence } from 'framer-motion'
 import { BackDrop } from '@components'
 import * as S from './styles'

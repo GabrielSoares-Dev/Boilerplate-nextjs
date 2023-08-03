@@ -1,5 +1,5 @@
-import type { InputProps } from '@/components/types'
 import { forwardRef } from 'react'
+import type { InputProps } from '@components'
 import * as S from './styles'
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
