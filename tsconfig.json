@@ -35,7 +35,8 @@
       "@hooks": ["./src/hooks"],
       "@middlewares":["./src/middlewares"],
       "@constants":  ["./src/constants"],
-      "@utils":  ["./src/utils"]
+      "@utils":  ["./src/utils"],
+      "@types":["./src/@types"]
     }
   },
 
