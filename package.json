@@ -46,7 +46,7 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.6",
+    "@commitlint/cli": "^17.7.0",
     "@commitlint/config-conventional": "^17.6.7",
     "@faker-js/faker": "^8.0.2",
     "@hookform/devtools": "^4.3.1",
