@@ -1,6 +1,7 @@
 import { renderHook } from '@testing-library/react'
 import { useAuthStore } from '@store'
 import { act } from 'react-dom/test-utils'
+import { getCookie } from 'cookies-next';
 
 const mockUserState = {
   accessToken: {
@@ -34,16 +35,16 @@ describe('useAuthStore', () => {
 
     expect(result.current.data).toBe(mockUserState)
   })
-  it('Should be set user state in local Storage', () => {
+  it('Should be set user state in cookies', () => {
     const { result } = renderHook(() => useAuthStore())
 
     act(() => {
       result.current.setUserState(mockUserState)
     })
 
-    const userInLocalStorage = localStorage.getItem('auth')
+    const userInCookies = getCookie('auth')
 
-    expect(userInLocalStorage).toEqual(expect.anything())
+    expect(userInCookies).toEqual(expect.anything())
   })
   it('Should be clear state', () => {
     const { result } = renderHook(() => useAuthStore())

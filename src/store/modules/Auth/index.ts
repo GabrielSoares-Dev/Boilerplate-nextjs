@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 import { AuthState } from '@/store/types'
-import { createJSONStorage, persist } from 'zustand/middleware'
+import {  persist } from 'zustand/middleware'
+import { setCookie,getCookie   } from 'cookies-next';
 
 export const useAuthStore = create(
   persist<AuthState>(
@@ -42,7 +43,18 @@ export const useAuthStore = create(
     }),
     {
       name: 'auth',
-      storage: createJSONStorage(() => localStorage),
+      storage: {
+        getItem: () => {
+          const storedData = getCookie('auth')
+          return storedData ? JSON.parse(storedData as string) : undefined
+        },
+        setItem: (key, value) => {
+          setCookie('auth', JSON.stringify(value))
+        },
+        removeItem: () => {
+          setCookie('auth', '')
+        },
+      },
     },
   ),
 )
