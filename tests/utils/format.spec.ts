@@ -1,4 +1,4 @@
-import { formatCPF, formatPhoneNumber } from '@utils'
+import { formatCPF, formatPhoneNumber,formatMoney } from '@utils'
 
 describe('Format', () => {
   it('Should be format a cpf', () => {
@@ -13,5 +13,11 @@ describe('Format', () => {
 
     const result = formatPhoneNumber(phoneNumber)
     expect(result).toBe('(61) 98983-3743')
+  })
+  it('Should be format a money', () => {
+    const money = '1.2'
+
+    const result = formatMoney(money)
+    expect(result).toBe('R$ 1,20')
   })
 })
