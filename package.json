@@ -30,7 +30,7 @@
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
     "framer-motion": "^10.15.0",
-    "next": "13.4.10",
+    "next": "13.4.16",
     "postcss": "8.4.26",
     "react": "18.2.0",
     "react-currency-input-field": "^3.6.11",
