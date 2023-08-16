@@ -49,7 +49,9 @@ export const useAuthStore = create(
           return storedData ? JSON.parse(storedData as string) : undefined
         },
         setItem: (key, value) => {
-          setCookie('auth', JSON.stringify(value))
+          setCookie('auth', JSON.stringify(value), {
+            expires: new Date('9999-12-31'),
+          })
         },
         removeItem: () => {
           setCookie('auth', '')
