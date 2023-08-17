@@ -27,6 +27,7 @@
       "@/*": ["./src/*"],
       "@public/*": ["./public/*"],
       "@tests/*": ["./tests/*"],
+      "@tests": ["./tests"],
       "@components": ["./src/components"],
       "@functions": ["./src/functions"],
       "@providers": ["./src/providers"],
