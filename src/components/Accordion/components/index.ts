@@ -1,0 +1,1 @@
+export { CommonAccordion } from './Common'
