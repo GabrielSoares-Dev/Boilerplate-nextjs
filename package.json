@@ -28,7 +28,7 @@
     "axios": "^1.4.0",
     "cookies-next": "^2.1.2",
     "eslint": "8.47.0",
-    "eslint-config-next": "13.4.12",
+    "eslint-config-next": "13.4.19",
     "framer-motion": "^10.16.1",
     "next": "13.4.10",
     "postcss": "8.4.26",
