@@ -1,0 +1,1 @@
+export { useModalConfirmationStore } from './Confirmation'

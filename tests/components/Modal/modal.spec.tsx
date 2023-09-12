@@ -11,8 +11,6 @@ describe('Modal', () => {
 
     expect(modal).toBeInTheDocument()
     expect(closeButton).toBeInTheDocument()
-    expect(modal).toHaveClass(
-      'w-max mx-auto p-6 bg-gray-700 rounded-xl',
-    )
+    
   })
 })

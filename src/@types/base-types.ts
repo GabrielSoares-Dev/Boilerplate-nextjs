@@ -1,4 +1,5 @@
 import { permissionsUrls } from '@constants'
+
 export type DefaultResponse = {
   statusCode: number
   message: string
@@ -29,3 +30,4 @@ export type Permissions =
   | 'syncRolesPermissions'
 
 export type Paths = keyof typeof permissionsUrls
+export type Cases = 'SUCCESS' | 'ERROR' | 'WARNING' | 'INFORMATION'
