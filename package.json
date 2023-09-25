@@ -36,7 +36,7 @@
     "react-currency-input-field": "^3.6.11",
     "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.46.1",
+    "react-hook-form": "^7.46.2",
     "react-icons": "^4.11.0",
     "react-input-mask": "^2.0.4",
     "react-toastify": "^9.1.3",
