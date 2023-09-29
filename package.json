@@ -31,7 +31,7 @@
     "next": "13.5.3",
     "eslint-config-next": "13.5.3",
     "framer-motion": "^10.16.4",
-    "postcss": "8.4.30",
+    "postcss": "8.4.31",
     "react": "18.2.0",
     "react-currency-input-field": "^3.6.11",
     "react-device-detect": "^2.2.3",
