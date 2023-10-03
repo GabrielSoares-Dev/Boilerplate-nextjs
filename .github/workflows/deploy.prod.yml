@@ -10,6 +10,12 @@ jobs:
     steps:
       - name: Checkout do repositorio
         uses: actions/checkout@v1
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - name: Install dependencies
+        run: npm i
       - name: Criando env production
         run: |
           touch .env.production

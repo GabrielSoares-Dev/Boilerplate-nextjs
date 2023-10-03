@@ -7,4 +7,4 @@ Dockerfile-staging
 Dockerfile-production
 .vscode
 npm-debug.log
-package-lock.json
+
